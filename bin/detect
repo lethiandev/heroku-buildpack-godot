@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ -f $1/project.godot ]; then
+  echo "Godot"
+  exit 0
+else
+  exit 1
+fi
