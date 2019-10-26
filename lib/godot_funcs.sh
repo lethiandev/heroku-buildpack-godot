@@ -1,11 +1,11 @@
 function download_godot_headless() {
-  GODOT_HEADLESS_URL=https://downloads.tuxfamily.org/godotengine/3.2/alpha2/Godot_v3.2-alpha2_linux_headless.64.zip
+  GODOT_HEADLESS_URL=https://downloads.tuxfamily.org/godotengine/3.2/alpha3/Godot_v3.2-alpha3_linux_headless.64.zip
 
   if [ ! -f $CACHE_DIR/godot_headless.64 ]; then
     output_section "Downloading Godot Headless Executable..."
     curl -s $GODOT_HEADLESS_URL -o godot-headless.zip || exit 1
     unzip -o godot-headless.zip
-    cp Godot_v3.2-alpha2_linux_headless.64 $CACHE_DIR/godot_headless.64
+    cp Godot_v3.2-alpha3_linux_headless.64 $CACHE_DIR/godot_headless.64
     touch "$CACHE_DIR/._sc_"
   else
     output_section "Using cached Godot Headless executable"
@@ -13,8 +13,8 @@ function download_godot_headless() {
 }
 
 function download_godot_templates() {
-  GODOT_TEMPLATES_URL=https://downloads.tuxfamily.org/godotengine/3.2/alpha2/Godot_v3.2-alpha2_export_templates.tpz
-  TEMPLATES_DEST="$CACHE_DIR/editor_data/templates/3.2.alpha2"
+  GODOT_TEMPLATES_URL=https://downloads.tuxfamily.org/godotengine/3.2/alpha3/Godot_v3.2-alpha3_export_templates.tpz
+  TEMPLATES_DEST="$CACHE_DIR/editor_data/templates/3.2.alpha3"
 
   if [ ! -f $TEMPLATES_DEST/webassembly_debug.zip ]; then
     output_section "Downloading Godot Templates..."
