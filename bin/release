@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: cd dist/ && python -m SimpleHTTPServer \$PORT
+  web: cd dist/ && python -m http.server \$PORT
 EOF
