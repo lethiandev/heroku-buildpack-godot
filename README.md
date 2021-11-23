@@ -1,3 +1,3 @@
 # Heroku Buildpack for Godot Engine
 
-Experimental Heroku Buildpack for Godot Engine 3.2.1.
+Experimental Heroku Buildpack for Godot Engine 3.4.
