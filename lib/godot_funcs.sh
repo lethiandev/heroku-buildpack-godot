@@ -35,5 +35,5 @@ function export_godot_project() {
   output_line "Target: '$BUILD_DIR/dist/index.html'"
 
   mkdir -p $OUTPUT_DEST
-  $CACHE_DIR/godot_headless.64 --path "$BUILD_DIR" --export-debug HTML5 "$OUTPUT_DEST/index.html" || exit 1
+  $CACHE_DIR/godot_headless.64 --path "$BUILD_DIR" --export HTML5 "$OUTPUT_DEST/index.html" || exit 1
 }
